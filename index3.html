@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name | Web Developer</title>
+<style>
+:root{--bg:#0b0d17;--card:#141828;--text:#e8eaf6;--mute:#9aa0b8;--acc:#7c5cff;--acc2:#22d3ee;--line:#252a42;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f7fc;--card:#fff;--text:#161a2e;--mute:#5b6280;--line:#e1e4f0}}
+:root[data-theme="dark"]{--bg:#0b0d17;--card:#141828;--text:#e8eaf6;--mute:#9aa0b8;--line:#252a42}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 5%;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:1.3rem;color:var(--acc)}
+nav ul{display:flex;gap:20px;list-style:none;overflow-x:auto}
+nav ul a{color:var(--mute);font-size:.9rem;white-space:nowrap}
+nav ul a:hover{color:var(--acc2)}
+.btn{display:inline-block;padding:11px 24px;border-radius:30px;font-weight:600;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;border:0}
+.btn.o{background:none;border:1.5px solid var(--acc);color:var(--text)}
+section{padding:80px 5%;max-width:1100px;margin:auto}
+.tag{color:var(--acc2);letter-spacing:3px;font-size:.75rem;font-weight:700}
+h2{font-size:2rem;margin:6px 0 32px}
+#home{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:80vh}
+h1{font-size:clamp(2.4rem,7vw,3.8rem);line-height:1.1}
+h1 span,.role{background:linear-gradient(135deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:1.5rem;font-weight:700;margin:8px 0 14px}
+.hero p{color:var(--mute);margin-bottom:24px;max-width:460px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.code{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem;overflow-x:auto;animation:fl 4s ease-in-out infinite}
+.code b{color:var(--acc)}.code i{color:var(--acc2);font-style:normal}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:var(--acc)}
+.card h3{margin-bottom:6px}.card p{color:var(--mute);font-size:.93rem}
+.num{color:var(--acc);font-weight:800;font-size:1.4rem;opacity:.7}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.about p{color:var(--mute);margin-bottom:12px}
+.info p{color:var(--text);border-bottom:1px solid var(--line);padding:8px 0;margin:0}
+.bar{height:8px;background:var(--line);border-radius:8px;margin-top:12px;overflow:hidden}
+.bar div{height:100%;border-radius:8px;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.sk{display:flex;justify-content:space-between;font-weight:700}
+.chips span{display:inline-block;font-size:.75rem;padding:3px 10px;margin:10px 6px 0 0;border-radius:20px;background:color-mix(in srgb,var(--acc) 18%,transparent);color:var(--acc2)}
+form{display:grid;gap:12px;max-width:520px}
+input,textarea{width:100%;padding:13px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit}
+footer{text-align:center;padding:28px;color:var(--mute);border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:760px){#home,.about{grid-template-columns:1fr}nav .btn{display:none}section{padding:60px 5%}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home" class="logo">MuhammadAfham</a>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul>
+<a href="#contact" class="btn">Let's Talk</a>
+</nav>
+
+<section id="home" class="hero">
+<div>
+<div class="tag">HELLO, I'M</div>
+<h1><span>MUHAMMAD AFHAM</span></h1>
+<div class="role">I'm a Web Developer</div>
+<p>I create modern, clean and interactive websites using HTML and CSS. I love turning creative ideas into beautiful digital experiences.</p>
+<div class="btns"><a href="#projects" class="btn">View My Work</a><a href="#contact" class="btn o">Contact Me</a></div>
+</div>
+<div class="code">
+<b>const</b> developer = <i>"Your Name"</i>;<br><br>
+<b>let</b> skills = [<br>&nbsp;&nbsp;<i>"HTML"</i>,<br>&nbsp;&nbsp;<i>"CSS"</i>,<br>&nbsp;&nbsp;<i>"JavaScript"</i><br>];<br><br>
+<b>return</b> <i>"Creative Web"</i>;
+</div>
+</section>
+
+<section id="about">
+<div class="tag">GET TO KNOW ME</div><h2>About Me</h2>
+<div class="about">
+<div>
+<h3>Creative Developer</h3><br>
+<p>I'm a student and aspiring web developer who enjoys building websites that look modern, clean and professional.</p>
+<p>I have completed HTML and CSS and I'm now moving into JavaScript and modern web development.</p>
+<a href="#contact" class="btn">Let's Work Together</a>
+</div>
+<div class="info card">
+<p><b>Name:</b> Your Name</p><p><b>Role:</b> Web Developer</p><p><b>Experience:</b> Learning &amp; Building</p><p><b>Focus:</b> Modern Websites</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="tag">MY ABILITIES</div><h2>My Skills</h2>
+<div class="grid">
+<div class="card"><div class="sk"><span>HTML</span><span>95%</span></div><p>Semantic &amp; structured websites</p><div class="bar"><div style="width:95%"></div></div></div>
+<div class="card"><div class="sk"><span>CSS</span><span>90%</span></div><p>Modern layouts &amp; animations</p><div class="bar"><div style="width:90%"></div></div></div>
+<div class="card"><div class="sk"><span>JavaScript</span><span>35%</span></div><p>Currently learning</p><div class="bar"><div style="width:35%"></div></div></div>
+<div class="card"><div class="sk"><span>GitHub</span><span>65%</span></div><p>Projects &amp; version control</p><div class="bar"><div style="width:65%"></div></div></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="tag">MY RECENT WORK</div><h2>Featured Projects</h2>
+<div class="grid">
+<div class="card"><span class="num">01</span><div class="tag">WEBSITE</div><h3>Personal Portfolio</h3><p>A modern portfolio website to showcase my skills and projects.</p><div class="chips"><span>HTML</span><span>CSS</span><span>Animation</span></div></div>
+<div class="card"><span class="num">02</span><div class="tag">LANDING PAGE</div><h3>Modern Landing Page</h3><p>A stylish landing page with clean UI and smooth interactions.</p><div class="chips"><span>HTML</span><span>CSS</span><span>UI</span></div></div>
+<div class="card"><span class="num">03</span><div class="tag">WEB DESIGN</div><h3>Creative Website</h3><p>A site focused on visual design, animation and user experience.</p><div class="chips"><span>HTML</span><span>CSS</span><span>Responsive</span></div></div>
+</div>
+</section>
+
+<section id="services">
+<div class="tag">WHAT I DO</div><h2>My Services</h2>
+<div class="grid">
+<div class="card"><span class="num">01</span><h3>Web Development</h3><p>Clean, structured websites built with modern HTML and CSS.</p></div>
+<div class="card"><span class="num">02</span><h3>Web Design</h3><p>Attractive, modern layouts designed with attention to detail.</p></div>
+<div class="card"><span class="num">03</span><h3>Animations</h3><p>Smooth CSS animations and interactive visual effects.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="tag">GET IN TOUCH</div><h2>Contact Me</h2>
+<form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! (demo)'">
+<input placeholder="Your name" required><input type="email" placeholder="Your email" required><textarea rows="4" placeholder="Your message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>© 2026 Your Name. All rights reserved.</footer>
+</body>
+</html>
